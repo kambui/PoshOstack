@@ -21,7 +21,7 @@ $headers["X-Auth-Token"] = "21c8c8d5fe6d4264af85e2861e9f0fe8"
 
 $postParams = @{username='admin';password='c752acf1f0ef40b0'}
 
-#$request = Invoke-RestMethod -Uri http://192.168.1.150:5000/v2.0/tokens/ -Method POST -Body '{"auth":{"tenantName":"admin", "passwordCredentials": {"username":"admin", "password": "c752acf1f0ef40b0" }}}' -ContentType application/json
+$request = Invoke-RestMethod -Uri http://192.168.1.150:5000/v2.0/tokens/ -Method POST -Body '{"auth":{"tenantName":"admin", "passwordCredentials": {"username":"admin", "password": "c752acf1f0ef40b0" }}}' -ContentType application/json
 #$request |ConvertTo-Json
 
 #Invoke-WebRequest -Uri http://192.168.1.150:5000/v2.0/tokens/ -Method POST -Body $postParams -Headers $headers
